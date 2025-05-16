@@ -14,7 +14,6 @@ import CheckoutPage from "./pages/CheckoutPage";
 import PaymentPage from "./pages/PaymentPage";
 import ProtectedRoute from "./components/ProtectedRoute";
 import ProfilePage from "./pages/ProfilePage";
-import ProductPage from './components/product/ProductPage';
 
 
 const App = () => {
