@@ -1,0 +1,85 @@
+/* ✅ Fade-in effect - Responsive timing */
+.fade-in {
+  opacity: 0;
+  animation: fadeInAnimation 1s ease-in-out forwards;
+}
+
+@keyframes fadeInAnimation {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* ✅ Slide-in effect - Optimized for mobile */
+.slide-in-text {
+  opacity: 0;
+  transform: translateY(15px); /* Reduced distance for mobile */
+  animation: slideIn 1s ease-in-out forwards;
+  animation-delay: 0.2s; /* Staggered timing */
+}
+
+@keyframes slideIn {
+  from {
+      opacity: 0;
+      transform: translateY(15px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* ✅ Zoom-in effect - Smoother on mobile */
+.zoom-in-btn {
+  transform: scale(0.9); /* Less extreme starting point */
+  animation: zoomIn 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.1) forwards;
+  animation-delay: 0.4s; /* Last in sequence */
+}
+
+@keyframes zoomIn {
+  from {
+      transform: scale(0.9);
+      opacity: 0;
+  }
+  to {
+      transform: scale(1);
+      opacity: 1;
+  }
+}
+
+/* Performance optimizations */
+@media (prefers-reduced-motion: reduce) {
+  .fade-in,
+  .slide-in-text,
+  .zoom-in-btn {
+      animation: fadeInAnimation 0.5s ease-in-out forwards !important;
+      transform: none !important;
+  }
+}
+
+/* Tablet adjustments (≥768px) */
+@media (min-width: 768px) {
+  .slide-in-text {
+      transform: translateY(20px); /* Original distance */
+      animation-duration: 1.2s;
+  }
+  
+  .zoom-in-btn {
+      transform: scale(0.8); /* Original scale */
+      animation-duration: 1s;
+  }
+}
+
+/* Laptop adjustments (≥992px) */
+@media (min-width: 992px) {
+  .fade-in {
+      animation-duration: 1.5s; /* Original timing */
+  }
+  
+  .slide-in-text {
+      animation-duration: 1.5s; /* Original timing */
+  }
+  
+  .zoom-in-btn {
+      animation-duration: 1.5s; /* Original timing */
+  }
+}
