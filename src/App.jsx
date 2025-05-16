@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import api from "./api";
 import MainLayout from "./layout/MainLayout"; // ✅ MainLayout already contains NavBar
 import HomePage from "./components/home/HomePage";
-import ProductPage from "./components/product/ProductPage";
+import ProductPage from "./components/product/productPage";
 import CartPage from "./components/cart/CartPage";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
