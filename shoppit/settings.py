@@ -22,7 +22,7 @@ SECRET_KEY = os.getenv('DJANGO_SECRET_KEY', 'your-very-secure-secret-key')
 
 DEBUG = True  # ❌ Change to False in production!
 
-ALLOWED_HOSTS = ["https://ecommerse-shoppit.onrender.com"]  # ✅ Add your domain when deploying
+ALLOWED_HOSTS = ["ecommerse-shoppit.onrender.com"]  # ✅ Add your domain when deploying
 
 # ✅ CORS Configuration (Allow Frontend React)
 CORS_ALLOWED_ORIGINS = [
