@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # ✅ Security settings (Don't expose secret key in production!)
 SECRET_KEY = os.getenv('DJANGO_SECRET_KEY', 'your-very-secure-secret-key')
 
-DEBUG = True  # ❌ Change to False in production!
+DEBUG = False  # ❌ Change to False in production!
 
 ALLOWED_HOSTS = ["ecommerse-shoppit.onrender.com"]  # ✅ Add your domain when deploying
 
