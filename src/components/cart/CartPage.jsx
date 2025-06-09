@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import CartItem from './CartItem';
+import CartItem from './Cartitem';
 import CartSummary from "./CartSummary";
 import api from "../../api";
 import { useNavigate } from "react-router-dom";
