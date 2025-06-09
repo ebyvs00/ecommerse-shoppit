@@ -14,6 +14,7 @@ import CheckoutPage from "./pages/CheckoutPage";
 import PaymentPage from "./pages/PaymentPage";
 import ProtectedRoute from "./components/ProtectedRoute";
 import ProfilePage from "./pages/ProfilePage";
+import CartItem from './CartItem'; // Adjust path based on your file structure
 
 
 const App = () => {
