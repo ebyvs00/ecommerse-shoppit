@@ -30,6 +30,7 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:5174",
     "http://localhost:5175",
     "https://ecommerse-shoppit-asja.vercel.app",
+    "https://ecommerse-shoppit-v7ii.vercel.app",
 ]
 
 # ✅ Installed Apps
